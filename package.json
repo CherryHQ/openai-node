@@ -1,12 +1,12 @@
 {
   "name": "@cherrystudio/openai",
-  "version": "6.3.0-fork.1",
+  "version": "6.5.0",
   "description": "Modified openai-node sdk by @cherrystudio",
   "author": "OpenAI <support@openai.com>",
   "types": "dist/index.d.ts",
   "main": "dist/index.js",
   "type": "commonjs",
-  "repository": "github:eurfelux/openai-node",
+  "repository": "github:cherryHQ/openai-node",
   "license": "Apache-2.0",
   "packageManager": "yarn@1.22.22",
   "files": [
