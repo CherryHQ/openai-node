@@ -1,10 +1,10 @@
+import { ClientOptions, OpenAI } from './client';
+import * as Errors from './error';
 import type { RequestInit } from './internal/builtin-types';
 import type { NullableHeaders } from './internal/headers';
 import { buildHeaders } from './internal/headers';
-import * as Errors from './error';
 import { FinalRequestOptions } from './internal/request-options';
 import { isObj, readEnv } from './internal/utils';
-import { ClientOptions, OpenAI } from './client';
 
 /** API Client for interfacing with the Azure OpenAI API. */
 export interface AzureClientOptions extends ClientOptions {
@@ -133,7 +133,7 @@ export class AzureOpenAI extends OpenAI {
       if (model === undefined && typeof options.body?.['get'] === 'function') {
         const formModel = options.body['get']('model');
         if (typeof formModel === 'string') {
-            model = formModel;
+          model = formModel;
         }
       }
       if (model !== undefined && !this.baseURL.includes('/deployments')) {
