@@ -1,6 +1,6 @@
 {
   "name": "@cherrystudio/openai",
-  "version": "6.6.0",
+  "version": "6.9.0",
   "description": "Modified openai-node sdk by @cherrystudio",
   "author": "OpenAI <support@openai.com>",
   "types": "dist/index.d.ts",
@@ -36,6 +36,8 @@
     "@types/ws": "^8.5.13",
     "@typescript-eslint/eslint-plugin": "8.31.1",
     "@typescript-eslint/parser": "8.31.1",
+    "deep-object-diff": "^1.1.9",
+    "@typescript-eslint/typescript-estree": "8.31.1",
     "eslint": "^9.20.1",
     "eslint-plugin-prettier": "^5.4.1",
     "eslint-plugin-unused-imports": "^4.1.4",
